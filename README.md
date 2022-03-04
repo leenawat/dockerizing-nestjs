@@ -8,3 +8,4 @@ docoker-compose up
 - .dockerignore
 - Dockerfile
 - docker-compose.yml
+- copy .env.example to .env

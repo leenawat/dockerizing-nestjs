@@ -6,9 +6,10 @@ services:
     build:
       context: .
     environment:
-      DB_SCHEMA: postgres
-      DB_USER: postgres
-      DB_PASSWORD: postgres
-      DB_HOST: postgres
+      DB_USER: ${USER}
+      DB_PASSWORD: ${PASSWORD}
+      DB_HOST: ${HOST}
     ports:
       - '3000:3000'
+    env_file:
+      - ./.env
