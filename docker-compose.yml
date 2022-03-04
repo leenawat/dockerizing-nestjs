@@ -1,0 +1,14 @@
+# docker-compose.yml
+
+version: "3.7"
+services:
+  nestjs-app:
+    build:
+      context: .
+    environment:
+      DB_SCHEMA: postgres
+      DB_USER: postgres
+      DB_PASSWORD: postgres
+      DB_HOST: postgres
+    ports:
+      - '3000:3000'
